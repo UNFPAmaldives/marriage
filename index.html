@@ -70,7 +70,7 @@ var FIRST_MAR = "values_first";
 var median_ages = { "values_first": 22.5, "values_all": 22.5 };
 
 
-var margin = {top: 10, right: 0, bottom: 30, left: 0},
+var margin = {top: 10, right: 10, bottom: 30, left: 0},
     width = 1090 - margin.left - margin.right,
 	height = 600 - margin.top - margin.bottom;
 
@@ -132,7 +132,7 @@ d3.tsv("data/marriage_bygroup_combined.tsv", type, function(error, data) {
 	  .append("text")
       	.attr("y", 5)
       	.style("text-anchor", "start")
-      	.text("MARRIED, MALE AND FEMALE");;
+      	.text("FIRST MARRIED, MALE AND FEMALE");;
 	svg.selectAll(".y.axis text").attr("x", 4).attr("dy", -4);
 	
 	// Annotation
