@@ -132,7 +132,7 @@ d3.tsv("data/marriage_bygroup_combined.tsv", type, function(error, data) {
 	  .append("text")
       	.attr("y", 5)
       	.style("text-anchor", "start")
-      	.text("FIRST MARRIED, MALE AND FEMALE");;
+      	.text("MARRIED, MALE AND FEMALE");;
 	svg.selectAll(".y.axis text").attr("x", 4).attr("dy", -4);
 	
 	// Annotation
@@ -330,13 +330,13 @@ function type(d, i) {
 	if (!(d.grp in groups)) {
 		groups[d.grp] = {
 			"1": { 
-				values_all: d3.range(9,50).map(function(d) { 
+				values_all: d3.range(14,97).map(function(d) { 
 					return {
 						age: d,
 						value: 0
 					}; 
 				}),
-				values_first: d3.range(9,50).map(function(d) { 
+				values_first: d3.range(14,97).map(function(d) { 
 					return {
 						age: d,
 						value: 0
@@ -345,13 +345,13 @@ function type(d, i) {
 			},
 			
 			"2": { 
-				values_all: d3.range(9,50).map(function(d) { 
+				values_all: d3.range(14,97).map(function(d) { 
 					return {
 						age: d,
 						value: 0
 					}; 
 				}),
-				values_first: d3.range(9,50).map(function(d) { 
+				values_first: d3.range(14,97).map(function(d) { 
 					return {
 						age: d,
 						value: 0
