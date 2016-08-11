@@ -130,9 +130,9 @@ d3.tsv("data/marriage_bygroup_combined.tsv", type, function(error, data) {
       	.attr("class", "y axis")
       	.call(yAxis)
 	  .append("text")
-      	.attr("y", 10)
+      	.attr("y", 5)
       	.style("text-anchor", "start")
-    //  	.text("MARRIED, MALE AND FEMALE");;
+      	.text("MARRIED, MALE AND FEMALE");;
 	svg.selectAll(".y.axis text").attr("x", 4).attr("dy", -4);
 	
 	// Annotation
@@ -158,7 +158,7 @@ d3.tsv("data/marriage_bygroup_combined.tsv", type, function(error, data) {
 		 	 });
          svg.append("text")
              .attr("class", "annotation")
-             .attr("transform", "translate("+x((year-0.8))+","+y(18.77)+")rotate(-90)")
+             .attr("transform", "translate("+x((year-0.4))+","+y(18.00)+")rotate(-90)")
 		 	 .attr("id", function() {
 				 if (id_name != false) {
 					 return id_name + "text";
